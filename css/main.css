@@ -1,3 +1,9 @@
 img{
     width: 200px;
 }
+.header{
+    background-color: yellow;
+}
+.footer{
+    background-color: antiquewhite;
+}

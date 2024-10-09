@@ -4,74 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercado Liebre</title>
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/9ef932abc9.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
                   <!-- Header -->
-    <header class="header">
-      <img src="../images/logo-mercado-liebre.svg" alt="Digital House">
+    <header class="main-header">
+      <a href="home.html">
+      <img src="../images/logo-mercado-liebre.svg" alt="Digital House" class="logo">
+      </a>
       <h1>Mercado Liebre</h1>
         <form>
           <label for="search">Búsqueda</label>
-          <input type="text" name="search" id="search">
+          <input type="text" name="search" id="search" placeholder="Buscar productos, marcas">
           <input type="submit" value="Buscar">
         </form>
-        <p>Comprá en cuotas y sin tarjeta de crédito</p>
-        <nav>
+        <p class="header_line_frase"><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+        <nav >
           <ul>
-            <li><a href="#">Ofertas</a></li>
-            <li><a href="#">Tiendas oficiales</a></li>
-            <li><a href="#">Vender</a></li>
-            <li><a href="#">Ayuda</a></li>
+            <a href="#"><li>Ofertas</li></a>
+            <a href="#"><li>Tiendas oficiales</li></a>
+            <a href="#"><li>Vender</li></a>
+            <a href="#"><li>Ayuda</li></a>
           </ul>
         </nav>
         <nav>
           <ul>
-            <li><a href="./register.html">Creá tu cuenta</a></li>
-            <li><a href="./login.html">Ingresá</a></li>
-            <li><a href="#">Mis compras</a></li>
+            <a href="./register.html"><li><i class="fa-solid fa-circle-user"></i>Creá tu cuenta</li></a>
+            <a href="./login.html"><li>Ingresá</li></a>
+            <a href="#"><li>Mis compras</li></a>
           </ul>
+          <div class="burger-menu">
+            <i class="fa-solid fa-bars my my-icon"></i>
+          </div>
         </nav>
     </header>
 
                   <!-- Main -->
-    <main>
+    <main class="content">
       <section >
         <h2>Basado en tu última visita</h2>
         
         <article>
-        <img src="../images/img-cafetera-moulinex.jpg" alt="Cafetera Moulinex">
-          <div>
-            <p>$6.770</p>
-            <p>40% off</p>
+        <img src="../images/img-cafetera-moulinex.jpg" alt="Cafetera Moulinex" class="main-article">
+          <div class="articulo">
+            <p class="precio">$6.770</p>
+            <p class="descuento">40% off</p>
             <h4>Cafetera Moulinex</h4>
           </div>
         </article>
 
         <article>
-        <img src="../images/img-macbook-pro-2019.jpg" alt="MacBook Pro 2019">
-          <div>
-            <p>$230.000</p>
-            <p>20% off</p>
+        <img src="../images/img-macbook-pro-2019.jpg" alt="MacBook Pro 2019" class="main-article">
+          <div class="articulo">
+            <p class="precio">$230.000</p>
+            <p class="descuento">20% off</p>
             <h4>MacBook Pro 2019</h4>
           </div>
         </article>
 
         <article>
-        <img src="../images/img-samsung-galaxy-s10.jpg" alt="Samsung Galaxy S10">
-          <div>
-            <p>$70.500</p>
-            <p>10% off</p>
+        <img src="../images/img-samsung-galaxy-s10.jpg" alt="Samsung Galaxy S10" class="main-article">
+          <div class="articulo">
+            <p class="precio">$70.500</p>
+            <p class="descuento">10% off</p>
             <h4>Samsung Galaxy S10</h4>
           </div>
         </article>
         
         <article>
-        <img src="../images/img-tv-samsung-smart.jpg" alt="SmartTV Samsung 43'">
-        <div>
-          <p>$23.200</p>
-          <p>5% off</p>
+        <img src="../images/img-tv-samsung-smart.jpg" alt="SmartTV Samsung 43'" class="main-article">
+        <div class="articulo">
+          <p class="precio">$23.200</p>
+          <p class="descuento">5% off</p>
           <h4>SmartTV Samusung 43"</h4>
         </div>
       </article>
@@ -81,37 +87,37 @@
         <h2>Ofertas</h2>
         
         <article>
-        <img src="../images/img-cafetera-moulinex.jpg" alt="Cafetera Moulinex">
-          <div>
-            <p>$6.770</p>
-            <p>40% off</p>
+        <img src="../images/img-cafetera-moulinex.jpg" alt="Cafetera Moulinex" class="main-article">
+          <div class="articulo">
+            <p class="precio">$6.770</p>
+            <p class="descuento">40% off</p>
             <h4>Cafetera Moulinex</h4>
           </div>
         </article>
 
         <article>
-        <img src="../images/img-macbook-pro-2019.jpg" alt="MacBook Pro 2019">
-          <div>
-            <p>$230.000</p>
-            <p>20% off</p>
+        <img src="../images/img-macbook-pro-2019.jpg" alt="MacBook Pro 2019" class="main-article">
+          <div class="articulo">
+            <p class="precio">$230.000</p>
+            <p class="descuento">20% off</p>
             <h4>MacBook Pro 2019</h4>
           </div>
         </article>
 
         <article>
-        <img src="../images/img-samsung-galaxy-s10.jpg" alt="Samsung Galaxy S10">
-          <div>
-            <p>$70.500</p>
-            <p>10% off</p>
+        <img src="../images/img-samsung-galaxy-s10.jpg" alt="Samsung Galaxy S10" class="main-article">
+          <div class="articulo">
+            <p class="precio">$70.500</p>
+            <p class="descuento">10% off</p>
             <h4>Samsung Galaxy S10</h4>
           </div>
         </article>
 
         <article>
-        <img src="../images/img-tv-samsung-smart.jpg" alt="SmartTV Samsung 43'">
-          <div>
-            <p>$23.200</p>
-            <p>5% off</p>
+        <img src="../images/img-tv-samsung-smart.jpg" alt="SmartTV Samsung 43'" class="main-article">
+          <div class="articulo">
+            <p class="precio">$23.200</p>
+            <p class="descuento">5% off</p>
             <h4>SmartTV Samusung 43"</h4>
           </div>
         </article>

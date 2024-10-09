@@ -1,9 +1,60 @@
-img{
+/* img{
     width: 200px;
+} */
+h1{
+    visibility: hidden;
 }
-.header{
-    background-color: yellow;
+h2,h3,h4{
+    font-size: 24px;
 }
-.footer{
-    background-color: antiquewhite;
+
+p{
+    font-size: 12px;
+}
+
+ul{
+    list-style: none;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+article{
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    margin-bottom: 3px;
+    text-align: center;
+}
+
+.articulo{
+    /* text-align: center; */
+}
+
+.main-article{
+        width: 100%;
+        height: auto; 
+        max-width: 300px;
+}
+
+.content {
+    font-family: "Roboto", sans-serif;
+}
+
+.precio{
+    font-size: 18px;
+}
+
+.descuento{
+    font-size: 16px;
+}
+
+.description{
+    font-size: 16px;
 }

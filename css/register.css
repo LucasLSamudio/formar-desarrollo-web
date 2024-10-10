@@ -1,0 +1,50 @@
+.form-register{
+    text-align: center;
+    background-color: #ebebeb;;
+    height: 50em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.ul-register-typeUser{
+    border:none;
+    padding: 0;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: line;
+    align-items: flex-start;
+}
+
+.ul-register-categories{
+    border:none;
+    padding: 0;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.label{
+    visibility: hidden;
+    display: none;
+}
+
+.p-text-form{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0px 0px 0px 0px;
+}
+
+.send-form{
+    background-color: #1259c3;
+}
+
+.box-register{
+    display: flex;
+    flex-direction: column;
+}
+
+#fecha-nacimiento{
+    text-wrap: wrap;
+}

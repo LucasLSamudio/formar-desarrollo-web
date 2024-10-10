@@ -1,0 +1,11 @@
+.form-login{
+    text-align: center;
+    background-color: #ebebeb;;
+    height: 8em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.h2-iniciar-sesion{
+    display: none;
+}

@@ -1,57 +1,110 @@
-/* img{
-    width: 200px;
-} */
-
-h2,h3,h4{
-    font-size: 24px;
+@media (max-width: 426px){
+    .seccion{
+        margin: auto;
+        padding: 0;
+        border: none;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
-p{
-    font-size: 12px;
-}
-
-ul{
-    list-style: none;
-}
-
-form{
+.main-container{
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
-    padding: 20px;
-}
-article{
-    border: 1px;
-    border-style: solid;
-    border-color: black;
-    margin-bottom: 3px;
-    text-align: center;
-}
-
-    /* Articulos  */
-
-.main-article{
-    text-align: center;
-        width: 100%;
-        height: auto; 
-        max-width: 300px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .content {
     font-family: "Roboto", sans-serif;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 90%;
+}
+
+.seccion-lastSeen, .seccion-ofertas{
+    width: 90%;
+    margin: 15px;
+	padding: 10px 10px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Articulos  */
+
+.articulo{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #ebebeb;;
+    border: solid 1px rgb(162, 162, 162);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 12px 6px 12px 6px;
+}
+
+.title-article{
+    padding: 10px 5px 0 5px;
+    display: flex;
+    text-transform: capitalize;
+    margin: 0 0 0 5px;
+}
+
+.img-article{
+    text-align: center;
+    height: auto; 
+    max-width: 250px;
+}
+
+.fa-truck-fast{
+    color: green;
+    width: 16%;
+    display: flex;
+    justify-content: start;
+    text-align: start;
+    margin-top: 10px;
+    padding: 5px;
+    border: solid 1px green;
+    border-radius: 100%;
+}
+
+.camion{
+    width: 90%;
+    margin: 0 0 0 8px;
+}
+
+.text-article{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+    border: solid 1px #ebebeb;
+    background-color: white;
+    margin: 0;
 }
 
 .precio{
     font-size: 18px;
+    margin: 0 0 0 5px;
+    padding: 5px;
 }
 
 .descuento{
     font-size: 16px;
+    margin: 0 0 0 5px;
+    padding: 5px;
 }
 
-.description{
-    font-size: 16px;
-}
+/* .description{
+    font-size: 16px; 
+} */

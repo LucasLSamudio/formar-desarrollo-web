@@ -16,12 +16,18 @@ body{
     box-sizing: inherit;
     background-color: #ebebeb;
 }
-
 header{
     background-color: #EAC926;
     font-family: "Roboto", sans-serif;
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 footer{
@@ -46,18 +52,11 @@ h1{
 h2{
     display: flex;
     justify-content: center;
-    font-size: 24px;
     text-align: center;
+    font-size: 24px;
     width: 90%;
     margin: 10px;    
 }
-
-/* h3,h4{
-    font-size: 24px;
-    text-align: center;
-    width: 90%;
-    padding: 0;
-} */
 
 p{
     font-size: 12px;

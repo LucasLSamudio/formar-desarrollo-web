@@ -43,6 +43,7 @@
 .box-register{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 #fecha-nacimiento{

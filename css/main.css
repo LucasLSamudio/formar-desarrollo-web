@@ -29,19 +29,19 @@
 .seccion-lastSeen, .seccion-ofertas{
     width: 90%;
     margin: 15px;
-	padding: 10px 10px;
+	padding: 10px;
     border: none;
     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 15px 5px;
 }
 
 /* Articulos  */
 
 .articulo{
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
     background-color: #ebebeb;;
     border-top: solid 1px rgb(162, 162, 162);
     display: flex;
@@ -59,14 +59,16 @@
 }
 
 .img-article{
-    text-align: center;
-    height: auto; 
     max-width: 250px;
+    width: 100%;
+    text-align: center;
+    height: auto;   
 }
 
 .fa-truck-fast{
     color: #06a806;
-    width: 16%;
+    width: 15%;
+    height: 75%;
     display: flex;
     justify-content: start;
     text-align: start;
@@ -74,12 +76,18 @@
     padding: 5px;
     border: solid 1px #06a806;
     border-radius: 100%;
+    /* position: absolute; */
 }
 
 .camion{
     width: 90%;
     margin: 0 0 0 8px;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    top: -25px;
 }
+
 
 .text-article{
     width: 100%;
@@ -87,9 +95,17 @@
     flex-direction: column;
     align-items: start;
     text-align: start;
-    border: solid 1px #ebebeb;
+    border-top: solid 1px #ebebeb;
     background-color: white;
     margin: 0;
+}
+
+.precio-descuento{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: baseline;
 }
 
 .precio{
@@ -104,15 +120,18 @@
     padding: 5px;
     color: #06a806;
 }
-    
-@media (min-width: 768px){
-    .articulo{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
+
+.fotoPerfil input{
+    display: flex;
 }
 
-@media (max-width: 426px){
-.text-article{
+@media (min-width: 0px) and (max-width: 374px){
+
+.articulo{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title-article{
     display: none;
 }
 
@@ -125,5 +144,84 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+}
+
+.fa-truck-fast{
+    width: 16.5%;
+}
+}
+
+@media (min-width: 375px) and (max-width: 424px){
+    .articulo{
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .fa-truck-fast{
+        width: 14%;
+    }
+    .title-article{
+        display: none;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px){
+    .fa-truck-fast{
+        width: 14%;
+    }
+    .title-article{
+        display: none;
+    }
+    .articulo{
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .seccion-lastSeen{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .articulo{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .fa-truck-fast{
+        width: 14%;
+    }
+    h3{
+        width: 100%;
+        font-size: 18px;
+    }
+    .title-article{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    .seccion-lastSeen, .seccion-ofertas{
+        margin: 7.5px 15px;
+        gap: 20px;
+    }
+
+}
+
+
+@media (min-width: 1024px) and (max-width: 1439px){
+    .articulo{
+        max-width: 350px;
+        width: 23%;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        margin: 5px;
+    }
+
+    .fa-truck-fast{
+        width: 22%;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 2560px){
+    .fa-truck-fast{
+        width: 14%;
 }
 }

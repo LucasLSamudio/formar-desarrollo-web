@@ -34,7 +34,29 @@
 }
 
     /* Divs del footer  */
+@media (min-width: 1024px){
+.desc-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
-.contenido-footer{
-    margin-top: 10px;
+}
+
+.contenido-footer-1{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido-footer-2{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido-footer-3{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
 }

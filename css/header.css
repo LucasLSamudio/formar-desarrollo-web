@@ -49,12 +49,6 @@
     align-items: center;
 }
 
-.nav-bar{
-    /* padding: 10px;
-    margin-left: -10px;
-    margin-right: 0px; */
-}
-
 .li-content-header{
     color: #03264C;
     text-decoration-line: underline;
@@ -183,7 +177,7 @@
     
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1024px) and (max-width: 1439px){
 
     .burger-menu {
         display: none;
@@ -208,6 +202,9 @@
         justify-content: space-between;
     }
 
+    .nav-bar{
+        width: 85%;
+    }
     .nav-container{
         width: 45%;
         display: flex;
@@ -215,7 +212,6 @@
             display: flex;
             gap: 10px;
             justify-content: space-around;
-            /* padding-right: 5%; */
         }
     }
     
@@ -227,7 +223,6 @@
             display: flex;
             gap: 10px;
             justify-content: space-around;
-            /* padding-left: 10%; */
         }
     }
 
@@ -239,6 +234,73 @@
     .search-box{
         width: 40%;
         height: 40%;
+        justify-content: flex-start;
+    }
+    
+    .search-box-input{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 2560px){
+    .burger-menu {
+        display: none;
+        }
+    
+    .logo-bar-p{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0 0 10px 0;
+    }
+
+    .logo{
+        width: 33%;
+    }
+    
+    .first-second-navs{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 125%;
+    }
+
+    .nav-container{
+        width: 45%;
+        display: flex;
+        ul{
+            display: flex;
+            gap: 50px;
+            justify-content: flex-start;
+            /* padding-right: 5%; */
+        }
+    }
+    
+    .nav-container-links{
+        width: 45%;
+        display: flex;
+        justify-content: flex-end;
+        ul{
+            display: flex;
+            gap: 50px;
+            justify-content: space-around;
+            /* padding-left: 10%; */
+        }
+    }
+
+    .container-logo-search{
+        width: 65%;
+        justify-content: space-around;
+    }
+
+    .search-box{
+        width: 45%;
+        height: 45%;
         justify-content: flex-start;
     }
     
